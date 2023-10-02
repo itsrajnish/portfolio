@@ -1,0 +1,161 @@
+.mask{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.intro-img{
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.mask::after{
+    background-color: black;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    opacity: 0.8;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+}
+.hero .content{
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left: 50%;
+}
+
+.hero .content h1{
+    font-size: 20px;
+    padding: 20px;
+}
+.content .btn{
+    margin: 1rem 1rem;
+  
+}
+.button{
+    margin-top: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.join{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.join button{
+    margin-top: 20px;
+    width: 20%;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(32, 149, 196);
+}
+.join input{
+    padding: 5px;
+    width: 60%;
+    margin: 5px;
+}
+.box1{
+    width: 50%;
+    height: 40vh;
+    /* border: 1px solid white; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.box2{
+    width: 50%;
+    /* border: 1px solid white; */
+    height: 40vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  margin-right: 20px;
+  align-items: center;
+
+}
+.part{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.card-body .btn{
+    border-color: gray;
+    margin: auto;
+    color: black;
+    background-color: rgb(35, 173, 228);
+}
+/* .card{
+    width: 90%;
+    margin-left: 70px;
+} */
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+.hero .content h1{
+    font-size: 1.2rem;
+}
+
+.hero .content p {
+    font-size: 1.4rem;
+}
+.container{
+    display: list-item;
+}
+
+
+
+.box1{
+    width: 90%;
+    height: 40vh;
+    /* border: 1px solid white; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.box2{
+    width: 100%;
+    /* border: 1px solid white; */
+    height: 40vh;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  margin-right: 20px;
+  align-items: center;
+
+}
+.join{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.join button{
+    margin-top: 20px;
+    width: 40%;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(32, 149, 196);
+}
+.join input{
+    padding: 5px;
+    width: 80%;
+    margin-top:10px;
+}
+
+}
